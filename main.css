@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/collection/930779/1920x1080");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  z-index: 10;
+}
+
+input:focus {
+    outline: none;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+#calculation_field {
+  grid-column: 2/5;
+  grid-row-start: 1;
+  width: 120px;
+  background-color: rgb(105,105,105,.7);
+  border: solid 1px #eee;
+  color: white;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+
+#clear {
+  grid-column-start: 1;
+}
+
+#seven, #eight, #nine, #divide {
+  grid-row-start: 2;
+}
+
+#divide, #multiply, #subtract, #add, #equal {
+  background-color: rgba(96, 186, 160, .5);
+}
+
+button:hover {
+  background-color: rgba(105,105,105, 1);
+  color: white;
+}
+
+#divide:hover, #multiply:hover, #subtract:hover, #add:hover, #equal:hover {
+  background-color: rgb(96, 186, 160);
+}
+
+
+button  {
+  background-color: rgba(17,17,17, .6);
+  border: solid 1px #F5F5F5;
+  color: #F5F5F5;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button:active {
+  border: 1px 1px 2px;
+  color: white;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+#calculation_field {
+  text-align: right;
+  padding-right: 20px;
+  font-size: 1em;
+  line-height: 40px;
+  background-color: rgba(17,17,17, .5);
+  box-sizing: border-box;
+}
+
+#to-do-list-wrapper {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: rgba(17,17,17, .5);
+}
+
+#todoInput {
+  line-height: 2em;
+  width: 260px;
+  height: 40px;
+  background-color: rgba(17,17,17,.4);
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+form {
+  color: #F5F5F5;
+  list-style-type: none;
+}
+
+input {
+  padding-left: 10px;
+  width: 260px;
+  line-height: 40px;
+  box-sizing: border-box;
+  display: block;
+
+}
+
+[type=checkbox] {
+  display: none;
+}
+
+label {
+  line-height: 40px;
+  padding-left: 10px;
+  display: block;
+}
+
+label:hover {
+  color: white;
+  font-weight: bold;
+  background-color: rgba(17,17,17, .7);
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  opacity: 0.5 ;
+
+}
+
+
+#clock {
+  color: white;
+  font-size: 10em;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(17,17,17, .2);
+  padding-left:  20px;
+  padding-right: 20px;
+}
+
+#theme_panel {
+  position:absolute;
+  bottom:0;
+  right:0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.theme-color {
+  width: 30px;
+  height: 30px;
+}
+
+#coral {
+  background-color: rgba(249, 122, 87, .5);
+}
+
+#coral:hover {
+  background-color: rgba(249, 122, 87, 1);
+}
+
+#lime_green:hover {
+  background-color: rgba(161, 244, 66, 1);
+}
+
+#lime_green {
+  background-color: rgba(161, 244, 66, .5);
+}
+
+#magenta {
+  background-color: rgba(222, 76, 255, .5);
+}
+
+#magenta:hover {
+  background-color: rgba(222, 76, 255, 1);
+}
+
+#teal {
+  background-color: rgba(96, 186, 160, .5);
+}
+
+#teal:hover {
+  background-color: rgba(96, 186, 160, 1);
+}
+
+
+#blue {
+  background-color: rgba(72, 184, 249, .5);
+}
+
+#blue:hover {
+  background-color: rgba(72, 184, 249, 1);
+}
+
+#purple {
+  background-color: rgba(110, 55, 229, .5);
+}
+#purple:hover {
+  background-color: rgba(110, 55, 229, 1);
+}

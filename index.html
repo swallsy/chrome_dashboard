@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body onload="startTime()">
+    <div id="left-items">
+        <div id="calculator">
+          <button class="cell" id="clear">C</button>
+          <div class="cell" id="calculation_field"></div>
+          <button class="cell" id="seven">7</button>
+          <button class="cell" id="eight">8</button>
+          <button class="cell" id="nine">9</button>
+          <button class="cell" id="divide">/</button>
+          <button class="cell" id="four">4</button>
+          <button class="cell" id="five">5</button>
+          <button class="cell" id="six">6</button>
+          <button class="cell" id="multiply">x</button>
+          <button class="cell" id="one">1</button>
+          <button class="cell" id="two">2</button>
+          <button class="cell" id="three">3</button>
+          <button class="cell" id="subtract">-</button>
+          <button class="cell" id="zero">0</button>
+          <button class="cell" id="decimal">.</button>
+          <button class="cell" id="equal">=</button>
+          <button class="cell" id="add">+</button>
+        </div>
+    </div>
+    <div id="to-do-list-wrapper">
+      <input type="text" id="todoInput" name="todo-input" value="" placeholder="Enter a new task">
+      <form id="todoList"></form>
+    </div>
+    <div id="clock"></div>
+    <div id="theme_panel">
+      <button class="theme-color" id="purple"></button>
+      <button class="theme-color" id="magenta"></button>
+      <button class="theme-color" id="coral"></button>
+      <button class="theme-color" id="lime_green"></button>
+      <button class="theme-color" id="teal"></button>
+      <button class="theme-color" id="blue"></button>
+    </div>
+
+    <script src="unsplash.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
