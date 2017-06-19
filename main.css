@@ -37,13 +37,16 @@ input:focus {
   grid-column: 2/5;
   grid-row-start: 1;
   width: 120px;
-  background-color: rgb(105,105,105,.7);
+  background-color: rgba(17,17,17, .5);
   border: solid 1px #eee;
   color: white;
-  font-size: 2em;
+  font-size: 1em;
   margin-left: auto;
   margin-right: auto;
-  line-height: 30px;
+  line-height: 28px;
+  text-align: right;
+  box-sizing: border-box;
+    padding-right: 20px;
 }
 
 #clear {
@@ -93,14 +96,7 @@ button:focus {
   outline: none;
 }
 
-#calculation_field {
-  text-align: right;
-  padding-right: 20px;
-  font-size: 1em;
-  line-height: 40px;
-  background-color: rgba(17,17,17, .5);
-  box-sizing: border-box;
-}
+
 
 #to-do-list-wrapper {
   float: right;
