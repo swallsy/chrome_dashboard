@@ -55,7 +55,7 @@ input:focus {
 }
 
 #divide, #multiply, #subtract, #add, #equal {
-  background-color: rgba(96, 186, 160, .5);
+  background-color: rgba(96, 186, 160, .8);
 }
 
 button:hover {
@@ -167,65 +167,4 @@ input:checked + label {
   background-color: rgba(17,17,17, .2);
   padding-left:  20px;
   padding-right: 20px;
-}
-
-#theme_panel {
-  position:absolute;
-  bottom:0;
-  right:0;
-  margin-right: 40px;
-  margin-bottom: 40px;
-}
-
-.theme-color {
-  width: 30px;
-  height: 30px;
-}
-
-#coral {
-  background-color: rgba(249, 122, 87, .5);
-}
-
-#coral:hover {
-  background-color: rgba(249, 122, 87, 1);
-}
-
-#lime_green:hover {
-  background-color: rgba(161, 244, 66, 1);
-}
-
-#lime_green {
-  background-color: rgba(161, 244, 66, .5);
-}
-
-#magenta {
-  background-color: rgba(222, 76, 255, .5);
-}
-
-#magenta:hover {
-  background-color: rgba(222, 76, 255, 1);
-}
-
-#teal {
-  background-color: rgba(96, 186, 160, .5);
-}
-
-#teal:hover {
-  background-color: rgba(96, 186, 160, 1);
-}
-
-
-#blue {
-  background-color: rgba(72, 184, 249, .5);
-}
-
-#blue:hover {
-  background-color: rgba(72, 184, 249, 1);
-}
-
-#purple {
-  background-color: rgba(110, 55, 229, .5);
-}
-#purple:hover {
-  background-color: rgba(110, 55, 229, 1);
 }

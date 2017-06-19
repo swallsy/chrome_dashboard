@@ -31,7 +31,17 @@
 //   console.log('hi');
 // });
 
+var img = document.createElement('body');
+img.setAttribute('src', 'https://source.unsplash.com/collection/930779/1920x1080')
 
+img.addEventListener('load', function() {
+    var vibrant = new Vibrant(img);
+    var swatches = vibrant.swatches()
+    for (var swatch in swatches)
+        if (swatches.hasOwnProperty(swatch) && swatches[swatch])
+            console.log(swatch, swatches[swatch].getHex())
+
+});
 
 // To Do List //
 
